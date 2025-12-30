@@ -6,7 +6,7 @@
 #    By: ejones <ejones.42angouleme@gmail.com>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/14 16:15:41 by ejones            #+#    #+#              #
-#    Updated: 2025/12/30 16:52:54 by ejones           ###   ########.fr        #
+#    Updated: 2025/12/30 18:20:17 by ejones           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,12 +32,12 @@ SRCC = ft_isalpha.c ft_isdigit.c ft_isalnum.c \
 OBJ_C = $(addprefix $(BUILD_DIR)/, $(SRCC:.c=.o))
 
 CC = cc
-CFLAGS += -Wall -Wextra -Werror -g -I$(INC_DIR) -MMD -MP
+CFLAGS = -Wall -Wextra -Werror -g -I$(INC_DIR) -MMD -MP
 
 NAME = libft.a
 
 all: $(NAME)
-
+	@bash ./PrintRules/make
 
 $(BUILD_DIR)/%.o: $(SRC_DIR)/%.c
 	@mkdir -p $(BUILD_DIR)
@@ -51,13 +51,19 @@ $(NAME): $(OBJ_C)
 # Removes all *.o files compiled from source and bonus
 clean:
 	@rm -rf $(BUILD_DIR);
+	@bash ./PrintRules/clean
+	@echo "Objects were removed Succesfully!!!!"
 
 # Does clean and removes libft.a
 fclean: clean
 	@rm -f $(NAME)
+	@bash ./PrintRules/fclean
 
 # Does fclean and then recompiles everything
-re: fclean $(NAME)
+re: print_re fclean $(NAME)
+
+print_re:
+	@bash ./PrintRules/re
 
 # Declaration of PHONY intructions
 .PHONY: all clean fclean re bonus
