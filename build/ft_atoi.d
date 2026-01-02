@@ -1,3 +1,3 @@
-build/ft_atoi.o: src/ft_atoi.c header/libft.h
+build/ft_atoi.o: src/ft_atoi.c src/../header/../header/libft.h
 
-header/libft.h:
+src/../header/../header/libft.h:

@@ -6,11 +6,11 @@
 /*   By: ejones <ejones.42angouleme@gmail.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 15:46:26 by ejones            #+#    #+#             */
-/*   Updated: 2025/10/27 15:52:39 by ejones           ###   ########.fr       */
+/*   Updated: 2026/01/02 13:57:47 by ejones           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../header/libft.h"
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {

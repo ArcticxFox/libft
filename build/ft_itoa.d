@@ -1,3 +1,3 @@
-build/ft_itoa.o: src/ft_itoa.c header/libft.h
+build/ft_itoa.o: src/ft_itoa.c src/../header/libft.h
 
-header/libft.h:
+src/../header/libft.h:

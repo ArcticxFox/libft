@@ -1,3 +1,3 @@
-build/ft_isascii.o: src/ft_isascii.c header/libft.h
+build/ft_isascii.o: src/ft_isascii.c src/../header/libft.h
 
-header/libft.h:
+src/../header/libft.h:

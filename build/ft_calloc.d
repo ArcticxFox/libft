@@ -1,3 +1,3 @@
-build/ft_calloc.o: src/ft_calloc.c header/libft.h
+build/ft_calloc.o: src/ft_calloc.c src/../header/libft.h
 
-header/libft.h:
+src/../header/libft.h:

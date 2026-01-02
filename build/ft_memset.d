@@ -1,3 +1,3 @@
-build/ft_memset.o: src/ft_memset.c header/libft.h
+build/ft_memset.o: src/ft_memset.c src/../header/libft.h
 
-header/libft.h:
+src/../header/libft.h:

@@ -1,3 +1,3 @@
-build/ft_strlcat.o: src/ft_strlcat.c header/libft.h
+build/ft_strlcat.o: src/ft_strlcat.c src/../header/libft.h
 
-header/libft.h:
+src/../header/libft.h:

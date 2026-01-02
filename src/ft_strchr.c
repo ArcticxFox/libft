@@ -6,11 +6,11 @@
 /*   By: ejones <ejones.42angouleme@gmail.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 14:59:51 by ejones            #+#    #+#             */
-/*   Updated: 2025/10/20 11:48:58 by ejones           ###   ########.fr       */
+/*   Updated: 2026/01/02 13:57:47 by ejones           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../header/libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {

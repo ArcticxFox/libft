@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ejones <ejones@student.42.fr>              +#+  +:+       +#+        */
+/*   By: ejones <ejones.42angouleme@gmail.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 18:01:55 by ejones            #+#    #+#             */
-/*   Updated: 2025/10/16 19:03:51 by ejones           ###   ########.fr       */
+/*   Updated: 2026/01/02 13:57:47 by ejones           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../header/libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

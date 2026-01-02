@@ -1,3 +1,4 @@
-build/ft_lstadd_front_bonus.o: src/ft_lstadd_front_bonus.c header/libft.h
+build/ft_lstadd_front_bonus.o: src/ft_lstadd_front_bonus.c \
+  src/../header/libft.h
 
-header/libft.h:
+src/../header/libft.h:

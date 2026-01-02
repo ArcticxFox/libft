@@ -1,3 +1,3 @@
-build/ft_toupper.o: src/ft_toupper.c header/libft.h
+build/ft_toupper.o: src/ft_toupper.c src/../header/libft.h
 
-header/libft.h:
+src/../header/libft.h:

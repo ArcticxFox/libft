@@ -6,11 +6,11 @@
 /*   By: ejones <ejones.42angouleme@gmail.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 13:30:14 by ejones            #+#    #+#             */
-/*   Updated: 2025/10/22 14:35:13 by ejones           ###   ########.fr       */
+/*   Updated: 2026/01/02 13:57:47 by ejones           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../header/libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {

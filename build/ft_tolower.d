@@ -1,3 +1,3 @@
-build/ft_tolower.o: src/ft_tolower.c header/libft.h
+build/ft_tolower.o: src/ft_tolower.c src/../header/libft.h
 
-header/libft.h:
+src/../header/libft.h:

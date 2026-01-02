@@ -1,3 +1,3 @@
-build/ft_substr.o: src/ft_substr.c header/libft.h
+build/ft_substr.o: src/ft_substr.c src/../header/libft.h
 
-header/libft.h:
+src/../header/libft.h:

@@ -6,11 +6,11 @@
 /*   By: ejones <ejones.42angouleme@gmail.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 17:48:55 by enones            #+#    #+#             */
-/*   Updated: 2025/10/24 18:23:23 by ejones           ###   ########.fr       */
+/*   Updated: 2026/01/02 13:57:47 by ejones           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../header/libft.h"
 // return 0 if the chr not found
 static int	check_chr(char c, char *set)
 {

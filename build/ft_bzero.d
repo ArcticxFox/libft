@@ -1,3 +1,3 @@
-build/ft_bzero.o: src/ft_bzero.c header/libft.h
+build/ft_bzero.o: src/ft_bzero.c src/../header/libft.h
 
-header/libft.h:
+src/../header/libft.h:

@@ -1,3 +1,3 @@
-build/ft_lstclear_bonus.o: src/ft_lstclear_bonus.c header/libft.h
+build/ft_lstclear_bonus.o: src/ft_lstclear_bonus.c src/../header/libft.h
 
-header/libft.h:
+src/../header/libft.h:

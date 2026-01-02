@@ -6,7 +6,7 @@
 #    By: ejones <ejones.42angouleme@gmail.com>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/14 16:15:41 by ejones            #+#    #+#              #
-#    Updated: 2025/12/30 18:20:17 by ejones           ###   ########.fr        #
+#    Updated: 2026/01/02 15:11:10 by ejones           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ BUILD_DIR ?= ./build
 SRC_DIR = ./src
 INC_DIR = ./header
 
-SRCC = ft_isalpha.c ft_isdigit.c ft_isalnum.c \
+LIBFT = ft_isalpha.c ft_isdigit.c ft_isalnum.c \
 	ft_isascii.c ft_isprint.c ft_strlen.c \
 	ft_memset.c ft_bzero.c ft_strchr.c \
 	ft_memcpy.c ft_memmove.c ft_strlcpy.c \
@@ -29,7 +29,12 @@ SRCC = ft_isalpha.c ft_isdigit.c ft_isalnum.c \
 	ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c \
 	ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c
 
-OBJ_C = $(addprefix $(BUILD_DIR)/, $(SRCC:.c=.o))
+PRINTF = ft_printf.c \
+	ft_printf_putadress_fd.c ft_printf_putchar_fd.c ft_printf_putnbr_fd.c \
+	ft_printf_putnbrbase_fd.c ft_printf_putstr_fd.c ft_printf_uiputnbr_fd.c
+
+LIBFT_OBJ = $(addprefix $(BUILD_DIR)/, $(LIBFT:.c=.o))
+PRINTF_OBJ = $(addprefix $(BUILD_DIR)/, $(PRINTF:.c=.o))
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror -g -I$(INC_DIR) -MMD -MP
@@ -43,8 +48,8 @@ $(BUILD_DIR)/%.o: $(SRC_DIR)/%.c
 	@mkdir -p $(BUILD_DIR)
 	@$(CC) $(CFLAGS) -c $< -o $@
 
-$(NAME): $(OBJ_C)
-	@ar rcs $(NAME) $(OBJ_C)
+$(NAME): $(LIBFT_OBJ) $(PRINTF_OBJ)
+	@ar rcs $(NAME) $(LIBFT_OBJ) $(PRINTF_OBJ)
 	@echo "The Object files have been Compiled"
 	@echo "The Library has been made!!!!!!"
 
@@ -58,9 +63,10 @@ clean:
 fclean: clean
 	@rm -f $(NAME)
 	@bash ./PrintRules/fclean
+	@echo "The Library was Succesfully Removed!!!!"
 
 # Does fclean and then recompiles everything
-re: print_re fclean $(NAME)
+re:  fclean print_re $(NAME)
 
 print_re:
 	@bash ./PrintRules/re
@@ -68,4 +74,4 @@ print_re:
 # Declaration of PHONY intructions
 .PHONY: all clean fclean re bonus
 
--include $(OBJ_C:.o=.d)
+-include $(LIBFT_OBJ:.o=.d)

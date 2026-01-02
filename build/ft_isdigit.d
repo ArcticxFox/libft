@@ -1,3 +1,3 @@
-build/ft_isdigit.o: src/ft_isdigit.c header/libft.h
+build/ft_isdigit.o: src/ft_isdigit.c src/../header/libft.h
 
-header/libft.h:
+src/../header/libft.h:

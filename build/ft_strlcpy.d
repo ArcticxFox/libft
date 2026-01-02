@@ -1,3 +1,3 @@
-build/ft_strlcpy.o: src/ft_strlcpy.c header/libft.h
+build/ft_strlcpy.o: src/ft_strlcpy.c src/../header/libft.h
 
-header/libft.h:
+src/../header/libft.h:

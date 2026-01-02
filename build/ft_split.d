@@ -1,3 +1,3 @@
-build/ft_split.o: src/ft_split.c header/libft.h
+build/ft_split.o: src/ft_split.c src/../header/libft.h
 
-header/libft.h:
+src/../header/libft.h:

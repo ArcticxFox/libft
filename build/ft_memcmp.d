@@ -1,3 +1,3 @@
-build/ft_memcmp.o: src/ft_memcmp.c header/libft.h
+build/ft_memcmp.o: src/ft_memcmp.c src/../header/libft.h
 
-header/libft.h:
+src/../header/libft.h:

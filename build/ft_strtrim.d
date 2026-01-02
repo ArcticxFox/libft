@@ -1,3 +1,3 @@
-build/ft_strtrim.o: src/ft_strtrim.c header/libft.h
+build/ft_strtrim.o: src/ft_strtrim.c src/../header/libft.h
 
-header/libft.h:
+src/../header/libft.h:

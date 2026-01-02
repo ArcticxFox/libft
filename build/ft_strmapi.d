@@ -1,3 +1,3 @@
-build/ft_strmapi.o: src/ft_strmapi.c header/libft.h
+build/ft_strmapi.o: src/ft_strmapi.c src/../header/libft.h
 
-header/libft.h:
+src/../header/libft.h:
