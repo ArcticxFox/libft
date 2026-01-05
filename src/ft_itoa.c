@@ -47,11 +47,9 @@ static char	*specialcase(int n)
 static char	*positiv_nbr(int n)
 {
 	int		size;
-	int		i;
 	char	*str;
 
 	size = nbr_len(n) + 1;
-	i = 0;
 	str = ft_calloc(size, sizeof(char));
 	if (!str)
 		return (NULL);
@@ -67,11 +65,9 @@ static char	*positiv_nbr(int n)
 static char	*negative_nbr(int n)
 {
 	int		size;
-	int		i;
 	char	*str;
 
 	size = nbr_len(n) + 2;
-	i = 0;
 	str = ft_calloc(size, sizeof(char));
 	if (!str)
 		return (NULL);

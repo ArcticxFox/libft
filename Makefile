@@ -43,6 +43,7 @@ NAME = libft.a
 
 all: $(NAME)
 	@bash ./PrintRules/make
+	@ls
 
 $(BUILD_DIR)/%.o: $(SRC_DIR)/%.c
 	@mkdir -p $(BUILD_DIR)
@@ -62,6 +63,7 @@ clean:
 # Does clean and removes libft.a
 fclean: clean
 	@rm -f $(NAME)
+	@rm -f a.out
 	@bash ./PrintRules/fclean
 	@echo "The Library was Succesfully Removed!!!!"
 
@@ -70,8 +72,9 @@ re:  fclean print_re $(NAME)
 
 print_re:
 	@bash ./PrintRules/re
+	@ls
 
 # Declaration of PHONY intructions
-.PHONY: all clean fclean re bonus
+.PHONY: all clean fclean re bonus print_re
 
 -include $(LIBFT_OBJ:.o=.d)
