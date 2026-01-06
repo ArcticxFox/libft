@@ -6,7 +6,7 @@
 /*   By: ejones <ejones.42angouleme@gmail.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 21:26:12 by ejones            #+#    #+#             */
-/*   Updated: 2026/01/02 13:57:47 by ejones           ###   ########.fr       */
+/*   Updated: 2026/01/06 15:03:14 by ejones           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_atoi(const char *nptr)
 {
 	long	res;
-	int	i;
+	int		i;
 
 	res = 0;
 	i = 1;
